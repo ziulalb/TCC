@@ -1,0 +1,69 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+  />
+  <link rel="stylesheet" href="./datatables.css" />
+  <title>Listar COTAS</title>
+</head>
+
+<body>
+  <div class="nav">
+    <header>
+      <a class="logo" href="./main.html"
+        ><img
+          src="./images/logo.svg"
+          width="90"
+          height="60"
+          alt="Logo da policia"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="listinq.html">Inquérito</a></li>
+          <li><a href="listtco.html">TCO</a></li>
+          <li><a href="listrec.html">Rec. Celular</a></li>
+          <li><a href="listinv.html">Investigados</a></li>
+          <li><a href="listcotas.html">COTAS</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="/logout">SAIR</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <li><a href="listinq.html">Inquérito</a></li>
+        <li><a href="listtco.html">TCO</a></li>
+        <li><a href="listrec.html">Rec. Celular</a></li>
+        <li><a href="listinv.html">Investigados</a></li>
+        <li><a href="listcotas.html">COTAS</a></li>
+      </div>
+    </div>
+  </div>
+  <table id="example" class="display" width="95">
+    <button>
+      <a href="addcotas.html">Adicionar COTAS</a>
+    </button>
+    <thead>
+      <tr>
+        <th>Número</th>
+        <th>Ano</th>
+        <th>Cumprida</th>
+        <th>Origem do ofício</th>
+        <th>Origem do Procedimento</th>
+        <th>Origem do IP//TCO</th>
+        <th>Delegado</th>
+        <th>Escrivão</th>
+        <th>Solicitação</th>
+        <th>Data de recebimento</th>
+        <th>Data do cumprimento</th>
+        <th>Prazo em dias</th>
+        <th>Número do protocolo</th>
+      </tr>
+    </thead>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="listcotas.js"></script>
+</body>

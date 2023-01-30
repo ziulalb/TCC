@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="./datatables.css">
+  <title>Listagem Investigados</title>
+</head>
+
+<body>
+
+  <div class="nav">
+    <header>
+      <a class="logo" href="./main.html"><img src="./images/logo.svg" width="90" height="60" alt="Logo da policia"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="listinq.html">Inquérito</a></li>
+          <li><a href="listtco.html">TCO</a></li>
+          <li><a href="listrec.html">Rec. Celular</a></li>
+          <li><a href="listinv.html">Investigados</a></li>
+          <li><a href="listcotas.html">COTAS</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="/logout">SAIR</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <li><a href="listinq.html">Inquérito</a></li>
+        <li><a href="listtco.html">TCO</a></li>
+        <li><a href="listrec.html">Rec. Celular</a></li>
+        <li><a href="listinv.html">Investigados</a></li>
+        <li><a href="listcotas.html">COTAS</a></li>
+      </div>
+    </div>
+  </div>
+  <table id="example" class="display" width="95">
+    <button>
+      <a href="addinv.html">Adicionar Investigado</a>
+    </button>
+    <thead>
+      <tr>
+        <th>Ano</th>
+        <th>CPF</th>
+        <th>RG</th>
+        <th>Nome</th>
+        <th>Apelido</th>
+        <th>Endereço</th>
+        <th>Delegado responsável</th>
+      </tr>
+    </thead>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="listinv.js"></script>
+</body>

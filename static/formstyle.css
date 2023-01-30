@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(20, 157, 220),
+    rgb(31, 97, 128)
+  );
+}
+.box {
+  z-index: -1;
+  color: white;
+  margin-top: 9rem;
+  margin-inline: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 45%;
+}
+fieldset {
+  border: 0.2rem solid dodgerblue;
+}
+legend {
+  border: 0.07rem solid dodgerblue;
+  padding: 0.65rem;
+  text-align: center;
+  background-color: dodgerblue;
+  border-radius: 0.5rem;
+}
+
+.radioBox {
+  position: relative;
+}
+.inputBox {
+  position: relative;
+}
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 0.07rem solid white;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  letter-spacing: 0.13rem;
+}
+.labelInput {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -1.3rem;
+  font-size: 0.75rem;
+  color: dodgerblue;
+}
+#data_nascimento {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.625rem;
+  outline: none;
+  font-size: 1rem;
+}
+#submit {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 92, 197),
+    rgb(90, 20, 220)
+  );
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.625rem;
+}
+#submit:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 80, 172),
+    rgb(80, 19, 195)
+  );
+}

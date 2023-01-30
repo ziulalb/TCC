@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./formstyle.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Adicionar inquérito</title>
+</head>
+
+<body>
+  <div class="nav">
+    <header>
+      <a class="logo" href="./main.html"><img src="./images/logo.svg" width="90" height="60" alt="Logo da policia"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="listinq.html">Inquérito</a></li>
+          <li><a href="listtco.html">TCO</a></li>
+          <li><a href="listrec.html">Rec. Celular</a></li>
+          <li><a href="listinv.html">Investigados</a></li>
+          <li><a href="listcotas.html">COTAS</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="/logout">SAIR</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <li><a href="listinq.html">Inquérito</a></li>
+        <li><a href="listtco.html">TCO</a></li>
+        <li><a href="listrec.html">Rec. Celular</a></li>
+        <li><a href="listinv.html">Investigados</a></li>
+        <li><a href="listcotas.html">COTAS</a></li>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <form action="/insertInq" method="post" autocomplete="off">
+      <fieldset>
+        <legend><b>Adicionar inquérito</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="num" id="num" class="inputUser" />
+          <label for="num" class="labelInput">Número</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="ano" id="ano" class="inputUser" />
+          <label for="ano" class="labelInput">Ano</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="numbo" id="numbo" class="inputUser" />
+          <label for="numbo" class="labelInput">Nº do BO</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="origem" id="origem" class="inputUser" />
+          <label for="origem" class="labelInput">Origem do inquérito</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="processo" id="processo" class="inputUser" />
+          <label for="processo" class="labelInput">Nº do processo</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="protocoloremessa" id="protocoloremessa" class="inputUser" />
+          <label for="protocoloremessa" class="labelInput">Protocolo de remessa</label>
+        </div>
+        <br>
+        <label for="remetido">Remetido: </label>
+        <input type="radio" name="remetido" id="remetido" value="sim" checked /> Sim
+        <input type="radio" name="remetido" id="remetido" value="nao" /> Não
+        <br><br><br>
+        <div class="inputBox">
+          <input type="text" name="delegado" id="delegado" class="inputUser" />
+          <label for="delegado" class="labelInput">Delegado responsável</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="escrivao" id="escrivao" class="inputUser" />
+          <label for="escrivao" class="labelInput">Escrivão responsável</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <label for="dataautuacao">Data da autuação: </label>
+          <input type="date" name="dataautuacao" id="dataautuacao" />
+        </div>
+        <br>
+        <div class="inputBox">
+          <label for="dataremessa">Data de remessa: </label>
+          <input type="date" name="dataremessa" id="dataremessa" />
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="indiciado" id="indiciado" class="inputUser" />
+          <label for="indiciado" class="labelInput">Indiciado</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="vitima" id="vitima" class="inputUser" />
+          <label for="vitima" class="labelInput">Vítima</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="crime" id="crime" class="inputUser" />
+          <label for="crime" class="labelInput">Crime</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <label for="datafato">Data do fato: </label>
+          <input type="date" name="datafato" id="datafato" />
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="localfato" id="localfato" class="inputUser" />
+          <label for="localfato" class="labelInput">Local do fato</label>
+        </div>
+        <br><br>
+        
+        <div class="inputBox">
+          <input type="number" name="tempotramitacao" id="tempotramitacao" class="inputUser" />
+          <label for="tempotramitacao" class="labelInput">Tempo de tramitação</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="autoapreensao" id="autoapreensao" class="inputUser" />
+          <label for="autoapreensao" class="labelInput">Auto de apreensão</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="termoentrega" id="termoentrega" class="inputUser" />
+          <label for="termoentrega" class="labelInput">Termo de entrega</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="solicitacao" id="solicitacao" class="inputUser" />
+          <label for="solicitacao" class="labelInput">Solicitação: </label>
+        </div>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Enviar" />
+        <br><br>
+        <input type="button" id="submit" value="Voltar" onclick="location.href='listinq.html'" />
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript" src="mobile.js"></script>
+</body>
+
+</html>

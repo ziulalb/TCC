@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./formstyle.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Adicionar Recuperação de celular</title>
+</head>
+
+<body>
+  <div class="nav">
+    <header>
+      <a class="logo" href="./main.html"><img src="./images/logo.svg" width="90" height="60" alt="Logo da policia"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="listinq.html">Inquérito</a></li>
+          <li><a href="listtco.html">TCO</a></li>
+          <li><a href="listrec.html">Rec. Celular</a></li>
+          <li><a href="listinv.html">Investigados</a></li>
+          <li><a href="listcotas.html">COTAS</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="/logout">SAIR</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <li><a href="listinq.html">Inquérito</a></li>
+        <li><a href="listtco.html">TCO</a></li>
+        <li><a href="listrec.html">Rec. Celular</a></li>
+        <li><a href="listinv.html">Investigados</a></li>
+        <li><a href="listcotas.html">COTAS</a></li>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <form action="/insertRec" method="post" autocomplete="off">
+      <fieldset>
+        <legend><b>Adicionar Recuperação de celular</b></legend>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="ano" id="ano" class="inputUser" />
+          <label for="ano" class="labelInput">Ano</label>
+        </div>
+        <br><br>
+        <label for="recuperado">Recuperado: </label>
+        <input type="radio" name="recuperado" id="recuperado" value="sim" checked /> sim
+        <input type="radio" name="recuperado" id="recuperado" value="nao" /> não
+        <br><br><br>
+        <div class="inputBox">
+          <input type="text" name="origembo" id="origembo" class="inputUser"  />
+          <label for="origembo" class="labelInput">BO</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="origemip" id="origemip" class="inputUser"  />
+          <label for="origemip" class="labelInput">Inquérito</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="escrivao" id="escrivao" class="inputUser"  />
+          <label for="escrivao" class="labelInput">Escrivão responsável</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="delegado" id="delegado" class="inputUser" />
+          <label for="delegado" class="labelInput">Delegado responsável</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="number" name="imei" id="imei" class="inputUser"  />
+          <label for="imei" class="labelInput">IMEI do aparelho</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="tipo" id="tipo" class="inputUser"  />
+          <label for="tipo" class="labelInput">Tipo do aparelho</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="vitima" id="vitima" class="inputUser"  />
+          <label for="vitima" class="labelInput">Vítima</label>
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <input type="text" name="usuario" id="usuario" class="inputUser"  />
+          <label for="usuario" class="labelInput">Usuário do celular</label>
+        </div>
+        <br><br>
+        <label for="datasub">Data de subtração: </label>
+        <input type="date" name="datasub" id="datasub"  />
+        <br><br><br>
+        <label for="dataapreensao">Data de apreensão: </label>
+        <input type="date" name="dataapreensao" id="dataapreensao"  />
+        <br><br><br>
+        <div class="inputBox">
+          <input type="number" name="diasrecuperacao" id="diasrecuperacao" class="inputUser"  />
+          <label for="diasrecuperacao" class="labelInput">Dias até a recuperação</label>
+        </div>
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Enviar" />
+        <br><br>
+        <input type="button" id="submit" value="Voltar" onclick="location.href='listrec.html'" />
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript" src="mobile.js"></script>
+</body>
+
+</html>

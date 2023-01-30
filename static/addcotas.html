@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./formstyle.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Adicionar COTAS</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <header>
+        <a class="logo" href="./main.html"
+          ><img
+            src="./images/logo.svg"
+            width="90"
+            height="60"
+            alt="Logo da policia"
+        /></a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="listinq.html">Inquérito</a></li>
+            <li><a href="listtco.html">TCO</a></li>
+            <li><a href="listrec.html">Rec. Celular</a></li>
+            <li><a href="listinv.html">Investigados</a></li>
+            <li><a href="listcotas.html">COTAS</a></li>
+          </ul>
+        </nav>
+        <a class="cta" href="/logout">SAIR</a>
+        <p class="menu cta">Menu</p>
+      </header>
+      <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+          <li><a href="listinq.html">Inquérito</a></li>
+          <li><a href="listtco.html">TCO</a></li>
+          <li><a href="listrec.html">Rec. Celular</a></li>
+          <li><a href="listinv.html">Investigados</a></li>
+          <li><a href="listcotas.html">COTAS</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <form action="/insertInv" method="post" autocomplete="off">
+        <fieldset>
+          <legend><b>Adicionar COTAS</b></legend>
+          <br />
+          <div class="inputBox">
+            <input type="number" name="num" id="num" class="inputUser" />
+            <label for="num" class="labelInput">Número</label>
+          </div>
+          <br><br>
+          <div class="inputBox">
+            <input type="number" name="ano" id="ano" class="inputUser" />
+            <label for="ano" class="labelInput">Ano</label>
+          </div>
+    <br>
+        <label for="cumprida">Cumprida: </label>
+        <input type="radio" name="cumprida" id="cumprida" value="sim" checked /> Sim
+        <input type="radio" name="cumprida" id="cumprida" value="nao" /> Não
+        <br><br><br>
+          <div class="inputBox">
+            <input type="text" name="origem_oficio" id="origem_oficio" class="inputUser" />
+            <label for="origem_oficio" class="labelInput">Origem do ofício</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="procedimento_origem" id="procedimento_origem" class="inputUser" />
+            <label for="procedimento_origem" class="labelInput">Origem do Procedimento</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="ip_tco_origem" id="ip_tco_origem" class="inputUser" />
+            <label for="ip_tco_origem" class="labelInput">Origem do IP//TCO</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="delegado" id="delegado" class="inputUser" />
+            <label for="delegado" class="labelInput">Delegado</label>
+          </div>
+    
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="escrivao" id="escrivao" class="inputUser" />
+            <label for="escrivao" class="labelInput">Escrivão</label>
+          </div>
+         
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="solicitacao" id="solicitacao" class="inputUser" />
+            <label for="solicitacao" class="labelInput">Solicitação</label>
+          </div>
+          <br><br>
+        <div class="inputBox">
+          <label for="data_recebido">Data de recebimento: </label>
+          <input type="date" name="data_recebido" id="data_recebido" />
+        </div>
+        <br><br>
+        <div class="inputBox">
+          <label for="data_cumprida">Data do cumprimento: </label>
+          <input type="date" name="data_cumprida" id="data_cumprida" />
+        </div>
+          <br /><br />
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="prazo_dias"
+              id="prazo_dias"
+              class="inputUser"
+            />
+            <label for="prazo_dias" class="labelInput">Prazo em dias</label>
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <input type="text" name="oficio_cumprimentos" id="oficio_cumprimentos" class="inputUser" />
+            <label for="oficio_cumprimentos" class="labelInput">Número do protocolo</label>
+          </div>
+          <br /><br />
+          <input type="submit" name="submit" id="submit" value="Enviar" />
+          <br /><br />
+          <input
+            type="button"
+            id="submit"
+            value="Voltar"
+            onclick="location.href='listinv.html'"
+          />
+        </fieldset>
+      </form>
+    </div>
+    <script type="text/javascript" src="mobile.js"></script>
+  </body>
+</html>
